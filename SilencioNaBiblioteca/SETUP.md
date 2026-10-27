@@ -13,20 +13,14 @@ Guia passo a passo para rodar a demo do zero. **Tempo total: ~10 minutos.**
 1. **Abra o Unity Hub → Add → Add project from disk** e selecione a pasta
    `SilencioNaBiblioteca/` deste repositório.
 
-2. **Abra o projeto** com o Editor **6000.6.6f1**. A primeira importação demora alguns minutos (artes grandes).
-   > Se o Hub reclamar da versão, confirme que o Editor selecionado é o 6000.6.6f1 (o projeto já está carimbado com essa versão, então não deve aparecer diálogo de upgrade).
+2. **Abra o projeto** com o Editor **6000.6.6f1**.
+   > ✅ **A cena já vem pronta no repositório** (`Assets/Scenes/Main.unity`, gerada e validada em batch). Basta abrir e apertar Play.
 
-3. No menu do Editor, clique em:
-   **`Silêncio na Biblioteca → 1. Preparar projeto (artes + cena)`**
+3. **Pressione Play (▶)** no editor. A demo começa na tela de título.
 
-   Esse comando:
-   - ajusta os PNGs de `Assets/Resources/Art/` como *Sprites*;
-   - cria e salva a cena `Assets/Scenes/Main.unity`;
-   - coloca a cena no Build Settings.
+4. Para gerar um build: `File → Build Settings → Build`. A cena `Main` já está listada.
 
-4. **Pressione Play (▶)** no editor. Pronto — a demo começa na tela de título.
-
-5. Para gerar um build: `File → Build Settings → Build`. A cena `Main` já está listada.
+> 🛠️ O menu **`Silêncio na Biblioteca → 1. Preparar projeto (artes + cena)`** ainda existe — use apenas se quiser **recriar** a cena do zero (ex.: depois de mudar os scripts de Editor). No dia a dia, não é necessário.
 
 ## 🕹️ Controles
 
@@ -82,6 +76,7 @@ Guia passo a passo para rodar a demo do zero. **Tempo total: ~10 minutos.**
 |---|---|
 | Diálogo: **cliques não avançam** / erro no Console mencionando `StandaloneInputModule` / `Input System` | `Edit → Project Settings → Player → Other Settings → Active Input Handling` → mude para **Input Manager (Old)** ou **Both** (a demo usa o Input clássico) |
 | Fundo branco no lugar da biblioteca | Rode o menu **Silêncio na Biblioteca → 1. Preparar projeto** de novo (garante que os PNGs viram Sprite) |
+| Erro de pacotes ao abrir (`cannot be found: com.unity.modules...`) | Não deve mais ocorrer (manifest já corrigido para o Unity 6.6). Se aparecer, é porque o projeto foi aberto a partir de uma versão antiga do repositório — atualize (`git pull`) e clique em **Retry** |
 | Hotspot "deslocado" em relação ao objeto da arte | Ajuste as frações em `HudUI.cs → Hotspots[]` (cx/cy = centro, w/h = tamanho, tudo em fração da tela) |
 | Projeto não aparece no Unity Hub | Confirme que a pasta selecionada contém `ProjectSettings/ProjectVersion.txt` |
 
