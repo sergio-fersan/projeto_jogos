@@ -2,7 +2,7 @@
 
 > 🎮 **Demo jogável (Unity)**: pasta [`SilencioNaBiblioteca/`](SilencioNaBiblioteca/) — instruções completas em [`SilencioNaBiblioteca/SETUP.md`](SilencioNaBiblioteca/SETUP.md).
 >
-> Resumo: abra a pasta no Unity Hub (Unity 2022.3 LTS), rode o menu **Silêncio na Biblioteca → 1. Preparar projeto (artes + cena)** e pressione Play.
+> Resumo: abra a pasta no Unity Hub (Editor **6000.6.6f1**), rode o menu **Silêncio na Biblioteca → 1. Preparar projeto (artes + cena)** e pressione Play.
 
 Arthur Carvalho Rotkis · Cauê Iwamoto Meira · Hanna de Oliveira Melo · Sérgio de Siqueira Santos
 

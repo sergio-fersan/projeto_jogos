@@ -4,7 +4,8 @@ Guia passo a passo para rodar a demo do zero. **Tempo total: ~10 minutos.**
 
 ## ✅ Pré-requisitos
 
-- **Unity 2022.3 LTS** (qualquer patch 2022.3.x) com o módulo **Windows Build Support** (Mac/Linux também funciona).
+- **Unity 6000.6.6f1** (Unity 6.6) — versão instalada no PC do grupo. Versões 6000.6.x anteriores/também devem abrir normalmente (o Unity avisa e atualiza o projeto se o patch for diferente).
+- Módulo **Windows Build Support** instalado no Editor (Mac/Linux também funcionam).
 - Este repositório já contém tudo: `SilencioNaBiblioteca/` é o projeto Unity pronto.
 
 ## 🚀 Passo a passo
@@ -12,7 +13,8 @@ Guia passo a passo para rodar a demo do zero. **Tempo total: ~10 minutos.**
 1. **Abra o Unity Hub → Add → Add project from disk** e selecione a pasta
    `SilencioNaBiblioteca/` deste repositório.
 
-2. **Abra o projeto** com Unity 2022.3 LTS. A primeira importação demora alguns minutos (artes grandes).
+2. **Abra o projeto** com o Editor **6000.6.6f1**. A primeira importação demora alguns minutos (artes grandes).
+   > Se o Hub reclamar da versão, confirme que o Editor selecionado é o 6000.6.6f1 (o projeto já está carimbado com essa versão, então não deve aparecer diálogo de upgrade).
 
 3. No menu do Editor, clique em:
    **`Silêncio na Biblioteca → 1. Preparar projeto (artes + cena)`**
@@ -73,6 +75,15 @@ Guia passo a passo para rodar a demo do zero. **Tempo total: ~10 minutos.**
 - NPCs são silhuetas geradas por código (marcador simples), conforme decidido para a entrega.
 - O fundo estica levemente em janelas com proporção diferente de 16:9 — para apresentar, use a Game view em proporção 16:9 ou fullscreen em monitor 1080p.
 - Não há áudio ainda (a ser feito no refinamento).
+
+## 🛠️ Problemas conhecidos e soluções
+
+| Sintoma | Solução |
+|---|---|
+| Diálogo: **cliques não avançam** / erro no Console mencionando `StandaloneInputModule` / `Input System` | `Edit → Project Settings → Player → Other Settings → Active Input Handling` → mude para **Input Manager (Old)** ou **Both** (a demo usa o Input clássico) |
+| Fundo branco no lugar da biblioteca | Rode o menu **Silêncio na Biblioteca → 1. Preparar projeto** de novo (garante que os PNGs viram Sprite) |
+| Hotspot "deslocado" em relação ao objeto da arte | Ajuste as frações em `HudUI.cs → Hotspots[]` (cx/cy = centro, w/h = tamanho, tudo em fração da tela) |
+| Projeto não aparece no Unity Hub | Confirme que a pasta selecionada contém `ProjectSettings/ProjectVersion.txt` |
 
 ## 👥 Grupo
 

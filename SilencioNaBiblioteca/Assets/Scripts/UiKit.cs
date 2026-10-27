@@ -16,11 +16,19 @@ namespace SilencioBiblioteca
             {
                 if (_font == null)
                 {
+                    try
+                    {
 #if UNITY_2022_1_OR_NEWER
-                    _font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                        // Unity 2022+ (inclui Unity 6 / 6000.x): Arial.ttf saiu dos builtin resources
+                        _font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 #else
-                    _font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+                        _font = Resources.GetBuiltinResource<Font>("Arial.ttf");
 #endif
+                    }
+                    catch
+                    {
+                        _font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+                    }
                 }
                 return _font;
             }
