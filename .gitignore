@@ -107,3 +107,17 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# --- SilencioNaBiblioteca (projeto Unity em subpasta) ---
+SilencioNaBiblioteca/[Ll]ibrary/
+SilencioNaBiblioteca/[Tt]emp/
+SilencioNaBiblioteca/[Oo]bj/
+SilencioNaBiblioteca/[Bb]uild/
+SilencioNaBiblioteca/[Bb]uilds/
+SilencioNaBiblioteca/[Ll]ogs/
+SilencioNaBiblioteca/[Uu]ser[Ss]ettings/
+SilencioNaBiblioteca/.utmp/
+
+# --- checagem de sintaxe (dev-tools) ---
+dev-tools/stubcheck/bin/
+dev-tools/stubcheck/obj/

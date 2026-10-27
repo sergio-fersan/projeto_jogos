@@ -1,3 +1,15 @@
+# Silêncio na Biblioteca 👾 — Jogos Digitais · FEI (7º ciclo)
+
+> 🎮 **Demo jogável (Unity)**: pasta [`SilencioNaBiblioteca/`](SilencioNaBiblioteca/) — instruções completas em [`SilencioNaBiblioteca/SETUP.md`](SilencioNaBiblioteca/SETUP.md).
+>
+> Resumo: abra a pasta no Unity Hub (Unity 2022.3 LTS), rode o menu **Silêncio na Biblioteca → 1. Preparar projeto (artes + cena)** e pressione Play.
+
+Arthur Carvalho Rotkis · Cauê Iwamoto Meira · Hanna de Oliveira Melo · Sérgio de Siqueira Santos
+
+---
+
+## 🖼️ Artes de referência
+
 <img width="1536" height="1024" alt="Folha de Sprites RPG em Pixel Art" src="https://github.com/user-attachments/assets/4ae8ec62-ee91-4e33-9428-f5db81c60a46" />
 
 <img width="1672" height="941" alt="Salão Vazio em Pixel Art Retro" src="https://github.com/user-attachments/assets/0649ab48-1b03-4af5-a374-fff1235d5494" />
