@@ -464,6 +464,9 @@ namespace SilencioBiblioteca
             _banTitle.text = title; _banBody.text = body;
             _banHint.text = string.IsNullOrEmpty(hint) ? "E / clique para continuar >" : hint;
             _banClosed = onClosed;
+            // o fade de cena nasce por último no canvas: sem isso o cartão de abertura
+            // fica atrás do preto e o jogador não lê o texto
+            _banRoot.transform.SetAsLastSibling();
             _banRoot.SetActive(true);
         }
 
