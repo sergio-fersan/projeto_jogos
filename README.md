@@ -6,6 +6,7 @@
 
 Arthur Carvalho Rotkis · Cauê Iwamoto Meira · Hanna de Oliveira Melo · Sérgio de Siqueira Santos
 
+https://hannaorlmelogmailcom.itch.io/silencio-na-biblioteca
 ---
 
 ## 📘 Manual do jogador
