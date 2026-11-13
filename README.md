@@ -8,6 +8,15 @@ Arthur Carvalho Rotkis · Cauê Iwamoto Meira · Hanna de Oliveira Melo · Sérg
 
 ---
 
+## 📘 Manual do jogador
+
+Manual completo do jogo, com apresentação, história, objetivos, componentes, mapa comentado, regras, mecânicas, condições de vitória e partidas comentadas.
+
+- 📖 [Manual completo em Markdown](MANUAL.md)
+- 📄 [Manual em PDF (34 páginas, 4 MB)](Manual_Silencio_na_Biblioteca.pdf)
+
+---
+
 ## 🎨 Design do menu e das cenas
 
 Artes que dão o acabamento visual do jogo. Cada uma aparece em um momento específico da história.
