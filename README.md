@@ -16,6 +16,8 @@ Build WebGL pronto para publicar no itch.io. O jogo roda no navegador, com áudi
 
 ▶️ Página publicada: <https://hannaorlmelogmailcom.itch.io/silencio-na-biblioteca>
 
+📦 [Download do build web (`SilencioNaBibliotecaWeb.zip`, 39 MB)](SilencioNaBibliotecaWeb.zip) — também versionado no repositório.
+
 **Publicar:**
 
 1. Crie o projeto no itch.io com *Kind of project* = **HTML**.
