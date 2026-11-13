@@ -125,3 +125,5 @@ dev-tools/stubcheck/obj/
 # Builds do jogo (artefatos gerados: distribua em Releases, nao no git)
 /SilencioNabibliotecaWin/
 /SilencioNabibliotecaWin.zip
+/SilencioNaBibliotecaWeb/
+/SilencioNaBibliotecaWeb.zip

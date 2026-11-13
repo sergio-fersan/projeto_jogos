@@ -6,7 +6,34 @@
 
 Arthur Carvalho Rotkis · Cauê Iwamoto Meira · Hanna de Oliveira Melo · Sérgio de Siqueira Santos
 
-https://hannaorlmelogmailcom.itch.io/silencio-na-biblioteca
+> 🌐 **Jogue no navegador**: [silencio-na-biblioteca no itch.io](https://hannaorlmelogmailcom.itch.io/silencio-na-biblioteca) — sem instalar nada.
+
+---
+
+## 🌐 Versão web (itch.io)
+
+Build WebGL pronto para publicar no itch.io. O jogo roda no navegador, com áudio e tela cheia, sem instalar nada.
+
+▶️ Página publicada: <https://hannaorlmelogmailcom.itch.io/silencio-na-biblioteca>
+
+**Publicar:**
+
+1. Crie o projeto no itch.io com *Kind of project* = **HTML**.
+2. Envie o arquivo `SilencioNaBibliotecaWeb.zip` (39 MB) e marque **This file will be played in the browser**.
+3. Em *Embed options*, use **1280 × 720**, ligue *Fullscreen button* e *Mobile friendly* (opcional).
+4. Salve e abra a página: o carregamento mostra o título do jogo e a barra de progresso; o áudio começa no primeiro clique/tecla.
+
+**Rebuild** (a pasta gerada fica fora do git, como os builds de desktop):
+
+```bash
+cd SilencioNaBiblioteca_loop_v9/SilencioNaBiblioteca
+~/Unity/Hub/Editor/6000.6.6f1/Editor/Unity -batchmode -quit \
+  -projectPath "$PWD" -buildTarget WebGL \
+  -executeMethod SilencioBiblioteca.EditorTools.BuildWeb.Perform
+```
+
+O script `Assets/Editor/BuildWeb.cs` gera `SilencioNaBibliotecaWeb/` na raiz do repositório com o template próprio `Assets/WebGLTemplates/Itch` (tela de carregamento no tema do jogo, botão de tela cheia, favicon). A compressão é **Gzip com decompression fallback**, que funciona tanto no itch.io quanto em qualquer servidor estático simples.
+
 ---
 
 ## 📘 Manual do jogador

@@ -504,6 +504,8 @@ namespace SilencioBiblioteca
         {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_WEBGL
+            ToastMain("Feche a aba do navegador para sair.");
 #else
             Application.Quit();
 #endif
