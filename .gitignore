@@ -121,3 +121,7 @@ SilencioNaBiblioteca/.utmp/
 # --- checagem de sintaxe (dev-tools) ---
 dev-tools/stubcheck/bin/
 dev-tools/stubcheck/obj/
+
+# Builds do jogo (artefatos gerados: distribua em Releases, nao no git)
+/SilencioNabibliotecaWin/
+/SilencioNabibliotecaWin.zip
